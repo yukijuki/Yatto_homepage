@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 /* ====== 共通 ====== */
+.bg-black{
+  background-color: black;
+}
 
 a:hover {
     text-decoration: none;
@@ -40,6 +43,10 @@ header .tel {
 
 .btn-outline-secondary:hover {
     color: #6c757d;
+}
+
+.nav-item a{
+  color: white;
 }
 
 /* ====== TOP IMAGE ====== */
@@ -186,3 +193,5 @@ iframe {
     font-size: 2rem;
     line-height: 1.2; } }
 /* END */
+
+
