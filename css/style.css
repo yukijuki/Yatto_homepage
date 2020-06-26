@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+.hover-white a:hover{
+  background-color: #ffffff;
+  color: #000;
+}
+
 body{
   font-family: serif;
   color: #fff;
@@ -134,15 +139,16 @@ header.top-page {
   position: relative;
 margin-bottom: 50px;
 }
-  .ttl-bdr::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-bottom: 5px solid #000;
-    width: 12%;
-    margin: 0 auto -15px; }
+
+.ttl-bdr::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 5px solid #000;
+  width: 12%;
+  margin: 0 auto -15px; }
 
 #sec3 {
   background-image: url("../img/bg-staff.jpg");
