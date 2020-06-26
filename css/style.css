@@ -1,6 +1,53 @@
 @charset "UTF-8";
 
+body{
+  font-family: serif;
+  color: #fff;
+  background-color: #000;
+}
+
+.fade_off {   
+  opacity: 0;
+  margin-top: 70px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+.fade_off-l {   
+  opacity: 0;
+  margin-left: 70px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+.fade_off-r {   
+  opacity: 0;
+  margin-right: 70px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+}
+
+.fade_on {
+  opacity: 1;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+}  
+
 /* ====== 共通 ====== */
+.text-black{
+  color: #000;
+}
+
 .bg-black{
   background-color: black;
 }
