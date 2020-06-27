@@ -127,6 +127,7 @@ header.top-page {
   padding:0;
   z-index: 1;
   text-align: center;
+  display: none;
 }
 
 .swiper-title h1,h5{

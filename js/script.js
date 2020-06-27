@@ -16,7 +16,6 @@ if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
 }
 
 //トップへ戻るボタン
-
 $(function() {
     var topBtn = $('#page-top');    
     topBtn.hide();
@@ -29,8 +28,8 @@ $(function() {
     });
     if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
   $(function() {
-	  $("#page-top").hide();
-});
+	$("#page-top").hide();
+  });
 }
     //スクロールしてトップ
     topBtn.click(function () {
@@ -42,16 +41,14 @@ $(function() {
 });
 
 //スマホのときだけ、トップへ戻るボタン無効化
-
 if (navigator.userAgent.match(/(iPhone|iPad|iPod|Android)/)) {
   $(function() {
-	  $("#page-top").hide();
+	$("#page-top").hide();
 });
 }
 
 
 //スムーススクロール
-
 $(function(){
 	$('nav a[href^="#"]').click(function(){
 		var speed = 500;
@@ -63,6 +60,7 @@ $(function(){
 	});
 });
 
+//フェード
 $(function(){
   $(window).scroll(function (){
     $(".fade-card").each(function(){
@@ -78,12 +76,18 @@ $(function(){
   });
 });
 
+//タイトルフェードイン
+$(window).on("load", function() {
+  $('.swiper-title').delay(300).fadeIn("slow");
+  });
 
+
+//スライドショー
 var swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 3000,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
