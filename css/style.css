@@ -107,24 +107,50 @@ header.top-page {
   height: 100vh;
   overflow: hidden;
   padding-right: 0;
-  padding-left: 0; }
+  padding-left: 0; 
+}
 
-.jumbotron {
-  background-image: url(../img/main-image.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.swiper-container {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: relative;
+}
 
-.jumbotron .bg-rgba {
-    background-color:rgba(255,255,255,0.9);
+.swiper-title {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  z-index: 1;
+  text-align: center;
 }
-.jumbotron h1 {
-    word-wrap: break-word;
+
+.swiper-title h1,h5{
+  color: black;
 }
-.jumbotron h2 {
-    line-height: 1.8rem;
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 /* ====== TOPPAGE SECTION ====== */
@@ -246,5 +272,6 @@ iframe {
     font-size: 2rem;
     line-height: 1.2; } }
 /* END */
+
 
 
