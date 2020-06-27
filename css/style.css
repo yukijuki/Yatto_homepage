@@ -80,14 +80,16 @@ header .tel {
   font-size: 80%; }
 
 #page-top a {
-  background: #666;
+  background: white;
   text-decoration: none;
-  color: #fff;
+  border: 0.1px solid #000;
+  color: black;
   width: 100px;
   padding: 25px 0;
   text-align: center;
   display: block;
-  border-radius: 10px; }
+  border-radius: 10px;
+}
 
 #page-top a:hover {
   text-decoration: none;
