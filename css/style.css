@@ -101,6 +101,11 @@ header .tel {
   color: white;
 }
 
+.navbar-toggler-icon i{
+  color: white;
+  font-size: 2rem;
+}
+
 /* ====== TOP IMAGE ====== */
 
 header.top-page {
