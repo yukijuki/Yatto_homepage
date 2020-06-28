@@ -60,7 +60,7 @@ $(function(){
 	});
 });
 
-//フェード
+//フェードイン
 $(function(){
   $(window).scroll(function (){
     $(".fade-card").each(function(){
@@ -76,10 +76,25 @@ $(function(){
   });
 });
 
-//タイトルフェードイン
-$(window).on("load", function() {
-  $('.swiper-title').delay(300).fadeIn("slow");
+$(function(){
+  $(window).on("load", function() {
+    $(".onload-fademotion").each(function(){
+      var imgPos = $(this).offset().top;
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/5){
+        $(this).addClass("fade_on");
+      } else {
+        $(this).removeClass("fade_on");
+      }
+    });
   });
+});
+
+//トップタイトルフェードイン
+$(window).on("load", function() {
+  $('.onload-fadein').delay(300).fadeIn("slow");
+});
 
 
 //スライドショー
@@ -93,4 +108,10 @@ var swiper = new Swiper('.swiper-container', {
     delay: 3000,
     disableOnInteraction: true
   },
+});
+
+
+//リロード
+$(function() {
+  $('html,body').animate({ scrollTop: 0 }, '1');
 });
