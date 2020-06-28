@@ -135,34 +135,23 @@ header.top-page {
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   margin:0;
-  padding:0;
+  padding: 2rem;
   z-index: 1;
   text-align: center;
   display: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 70%;
 }
 
-.swiper-title h1,h5{
-  color: black;
+.swiper-title h1{
+  color: white;
+  font-weight: 900;
+  font-size: 3rem;
 }
 
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.swiper-title h5{
+  color: white;
+  font-size: 1.5rem;
 }
 
 /* ====== TOPPAGE SECTION ====== */
@@ -298,7 +287,7 @@ iframe {
   }
   
   .swiper-title{
-    width: 70%;
+    width: 82%;
   }
 }
 /* END */
