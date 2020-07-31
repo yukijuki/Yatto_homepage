@@ -85,7 +85,12 @@ a:hover {
     opacity: 0.8;
 }
 header .navbar-brand {
-  width: 20%; }
+  width: 8%; 
+  margin-left: 2rem;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
   header .navbar-brand .logo {
     width: 100%; }
 header .tel {
@@ -100,7 +105,8 @@ header .tel {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  font-size: 80%; }
+  font-size: 80%;
+  z-index: 1; }
 
 #page-top a {
   background: white;
@@ -146,9 +152,20 @@ header.top-page {
   position: relative;
 }
 
+.swiper-wrapper {
+  position: absolute; /* ← swiper.cssと優先順位が干渉するときは工夫してください */
+  top: 0;
+  left: 0;
+}
+
+.swiper-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
 .swiper-title {
   position: absolute;
-  top: 45%;
+  top: 40%;
   left: 50%;
   -ms-transform: translate(-50%,-50%);
   -webkit-transform: translate(-50%,-50%);
@@ -239,9 +256,14 @@ iframe {
 }
 
 /* ====== FOOTER ====== */
+footer{
+  background-image: url(../img/footer-image.png);
+}
+
 .footer-logo {
   width: 50%;
 }
+
 
 /* =============================================
 メディアクエリ
@@ -257,11 +279,15 @@ iframe {
 ==============================================*/
 @media screen and (max-width: 991.98px) {
   .container {
-    max-width: 740px; } }
+    max-width: 740px; } 
+  .sec5title{
+    margin-top: 2rem;
+  }
+}
 /* END */
 /* 小デバイス（横向きモバイル, 768px 未満）
 ==============================================*/
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -273,7 +299,11 @@ iframe {
   }
 
   header .navbar-brand {
-    width: 70%;
+    width: 20%;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   
   header .navbar-brand .logo {
@@ -290,6 +320,11 @@ iframe {
   .swiper-title{
     width: 70%;
   }
+
+  .swiper-wrapper img {
+    width: auto;
+    height: 100%;
+}
 
 }
 /* END */
